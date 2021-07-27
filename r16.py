@@ -9,10 +9,10 @@ import os.path
 
 ### config
 
-masterfolder = "/h/audio/masters/";
-sourcefolder = "/media/jacob/F84E-1690/";
+masterfolder = "/h/audio/masters/"
+sourcefolder = "/media/jacob/F84E-1690/"
 copycmd = "rsync -t --progress"
-defaultdays = "7";
+defaultdays = "7"
 
 
 ### check folder setup
