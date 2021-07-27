@@ -10,7 +10,7 @@ import os.path
 ### config
 
 masterfolder = "/h/audio/masters/"
-sourcefolder = "/media/jacob/F84E-1690/"
+sourcefolder = "/media/sdcard/"
 copycmd = "rsync -t --progress"
 defaultdays = "7"
 
@@ -110,11 +110,13 @@ subparsers = parser.add_subparsers(help='sub-command help', dest='cmd', title="c
 subparsers.required=True
 
 # projects subcommand
+
 parser_projects = subparsers.add_parser('projects', aliases=['p'], help='project folders')
 parser_projects.add_argument("-l", "--list", action="store_true", help="list all projects")
 parser_projects.set_defaults(func=projects)
 
 # masters subcommand
+
 parser_masters = subparsers.add_parser('masters', aliases=['m'], help='master audio files')
 parser_masters.add_argument("-l", "--list", nargs='?', const=defaultdays, type=int, help="list recent master files in the last # days (default 7)")
 parser_masters.add_argument("-d", "--download", nargs='?', const=defaultdays, type=int, help="download recent master files in the last # days (default 7)")

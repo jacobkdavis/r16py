@@ -4,13 +4,13 @@ Zoom R16 multitrack recorder file management utility, written in Python for the 
 
 ## Initial setup
 
-- Download copy of script
-- Edit script to set configuration variables
+- Download copy of script: `git clone https://github.com/jacobkdavis/r16py.git`
+- Edit script to set configuration variables:
   - masterfolder = local folder for storage of mastered .wav files
   - sourcefolder = path to the zoom sd card or usb device 
   - copycmd = set to use rsync by default to show progress while copying larger files, but you could also change this to "cp" when rsync isn't available
   - defaultdays = default setting for how 
-- Set script to executable (chmod +x r16.py) and run via "r16.py", or run via "python r16.py"
+- Set script to executable (`chmod +x r16.py`) and run via `r16.py`, or run via `python r16.py`
 
 ## Basic usage
 
