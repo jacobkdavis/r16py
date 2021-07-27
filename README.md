@@ -1,6 +1,6 @@
 # r16py
 
-Command-line file management utility for Zoom R16 multitrack recorders for linux, written in Python.
+Zoom R16 multitrack recorder file management utility, written in Python for the linux command line
 
 ## Initial setup
 
@@ -35,7 +35,7 @@ masters (m)         master audio files
 ## Projects (zoom multi-track projects)
 
 ```
-usage: r16 projects [-h] [-l]
+usage: r16.py projects [-h] [-l]
 
 optional arguments:
 -h, --help  show this help message and exit
@@ -45,7 +45,7 @@ optional arguments:
 ## Masters (mastered audio .wav files)
 
 ```
-usage: r16 masters [-h] [-l [LIST]] [-d [DOWNLOAD]]
+usage: r16.py masters [-h] [-l [LIST]] [-d [DOWNLOAD]]
 
 optional arguments:
 -h, --help            show this help message and exit
